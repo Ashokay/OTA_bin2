@@ -20,7 +20,7 @@ ENV PATH="/opt/microchip/xc32/v4.00/bin:${PATH}"
 RUN make
 
 # Expose any necessary ports
-#EXPOSE 5050
+EXPOSE 5050
 
 # Define the command to run when the container starts
 CMD ["make","Makefile"]
