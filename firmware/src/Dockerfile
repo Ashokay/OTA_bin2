@@ -14,7 +14,7 @@ WORKDIR /app
 #VOLUME /home/ubuntu/harshal:/
 
 # Add the XC32 compiler to the system's PATH
-#ENV PATH="/opt/microchip/xc32/v2.50/bin:${PATH}"
+ENV PATH="/opt/microchip/xc32/v4.00/bin:${PATH}"
 
 # Install any additional dependencies required by your project
 RUN make
