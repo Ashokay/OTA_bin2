@@ -14,9 +14,9 @@ WORKDIR /app
 VOLUME /mplab
 
 # Copy files from the container to the volume
-RUN mkdir /myfiles
-COPY . /app/myprogram.hex /myfiles
-RUN cp -R /myfiles/* /mplab/
+RUN mkdir /app
+COPY . /app/myprogram.hex /app
+RUN cp -R /app/* /mplab/
 
 # Mount the XC32 compiler directory from the server into the container
 #VOLUME /home/ubuntu/harshal:/
