@@ -27,3 +27,4 @@ EXPOSE 5050
 
 # Define the command to run when the container starts
 #CMD ["make","Makefile"]
+CMD ["cp", "myprogram.hex", "/var/lib/jenkins/workspace/${mplab-cicd}"]
