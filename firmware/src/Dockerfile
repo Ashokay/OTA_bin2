@@ -17,7 +17,7 @@ WORKDIR /app
 #VOLUME /home/ubuntu/harshal:/
 
 # Add the XC32 compiler to the system's PATH
-ENV PATH="/opt/microchip/xc32/v4.00/bin:${PATH}"
+ENV PATH="/opt/microchip/xc32/v4.30/bin:${PATH}"
 
 # Install any additional dependencies required by your project
 RUN make
@@ -27,4 +27,4 @@ EXPOSE 5050
 
 # Define the command to run when the container starts
 #CMD ["make","Makefile"]
-CMD ["cp", "myprogram.hex", "/var/lib/jenkins/workspace/mplab-cicd"]
+#CMD ["cp", "myprogram.hex", "/var/lib/jenkins/workspace/mplab-cicd"]
